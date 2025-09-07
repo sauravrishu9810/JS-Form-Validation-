@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-    
-    
+    <div class="container">
+        <div class="box">
+
+            <header class="header" id="header-text">
+                <h1 id="form-heading">Sign-Up</h1>
+            </header>
+
+            <main class="body">
+                <form action="#">
+                    <div class="div" id="form-h1">
+                        <label for="name">Full-Name</label>
+                        <input type="text" placeholder="Enter Full Name" id="name" required/>
+                        <span class="name-error"></span>
+                        <i class="fa-solid" id="name-icon"></i>
+                    </div>
+
+                    <div class="div">
+                        <label for="email">E-Mail</label>
+                        <input type="email" placeholder="xyz@gmail.com" id="email" required/>
+                        <span class="email-error"></span>
+                        <i class="fa-solid" id="email-icon"></i>
+                    </div>
+
+                    <div class="div">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="at least 8 characters" id="password" required min="8" max="30"/>
+                        <span class="pass-error"></span>
+                        <i class="fa-solid" id="pass-icon"></i>
+                    </div>
+
+                    <div class="div" id="confirmPasswordDiv">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" placeholder="at least 8 characters" id="confirm-password" required min="8" max="30"/>
+                        <span class="confirm-pass-error"></span>
+                        <i class="fa-solid" id="confirm-pass-icon"></i>
+                    </div>
+                    
+                    <div class="div">
+                        <input type="submit" class="button-submit" value="Create Account">
+                    </div>
+                </form> 
+            </main>
+
+            <footer class="footer">
+                <p class="sign-in">Already Have an Account?
+                    <a href="#">Sign In</a></p>
+
+                <div class="social-icons">
+                    <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.staylinked.com/" target="_blank"><i class="fa-brands fa-staylinked"></i></a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <div class="by">
+        <p>~ By Saurav Mishra</p>
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
